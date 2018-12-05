@@ -6,4 +6,6 @@
 - Stereotaxic surgery log sheet_Filled.jpg: example of filled logs after surgery
 - wanglab.py: Python code used to generate lab-wide DataJoint schema 
 - TGvIRt.py: Python code used to generate DataJoint schema for vIRt ephys experiments  
+- vIRt20_Probe33.xlsx: example of notes kept for chronic recordings. NB: there are two tabs (tracksheet to record depth of each tetrode, and Notes)
+- Experiment Note Sheet - vIRt22.xlsx: example of notes kept for semi-chronic recordings. This is basically an extension of a surgery log.
 
