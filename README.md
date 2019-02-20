@@ -9,6 +9,5 @@
 - vIRt20_Probe33.xlsx: example of notes kept for chronic recordings. NB: there are two tabs (tracksheet to record depth of each tetrode, and Notes)
 - Experiment Note Sheet - vIRt22.xlsx: example of notes kept for semi-chronic recordings. This is basically an extension of a surgery log.
 - erd-lab.png and erd-TGvIRt.png: Entity relationship diagrams (ERD) for initial pipeline (lab + ephys experiments)
-![alt text](https://github.com/wanglab-duke/Orofacial_U19_Shared_Files/blob/master/erd-lab.png)
-![alt text](https://github.com/wanglab-duke/Orofacial_U19_Shared_Files/blob/master/erd-TGvIRt.png)
+![alt text](https://github.com/ttngu207/Orofacial_U19_Shared_Files/blob/master/erd-all.png)
 
