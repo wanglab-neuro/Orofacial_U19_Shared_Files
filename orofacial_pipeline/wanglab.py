@@ -132,7 +132,7 @@ class Subject(dj.Manual):
     --- 
     species        : varchar(30)
     date_of_birth=null : date  # YYYY-MM-DD optional  
-    sex='' : enum('M', 'F', '')   # leave empty if unspecified
+    sex='U' : enum('M', 'F', 'U')   #
     cage_card=null : int # cage card optional
     location       : varchar(30) # e.g., 009_colony
     project_use    : varchar(255)
@@ -158,8 +158,8 @@ class Probe(dj.Lookup):
         definition = """
         -> master
         electrode : tinyint   # electrode on probe
-        ---
         shank_id: tinyint  # the shank id of this probe this channel is located on 
+        ---
         electrode_x  : decimal(6,4)  # (mm) electrode map
         electrode_y  : decimal(6,4)  # (mm) electrode map
         electrode_z  : decimal(6,4)  # (mm) electrode map
