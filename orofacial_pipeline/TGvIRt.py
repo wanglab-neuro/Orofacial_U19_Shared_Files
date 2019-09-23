@@ -7,36 +7,6 @@ from . import reference
 
 schema = dj.schema(dj.config.get('database.prefix', '') + 'tgvirt')
 
-
-@schema
-class Surgery(dj.Manual):
-    definition = """
-    -> lab.Subject
-    --- 
-    surgery : varchar(4000)    # description of surgery
-    """
-    
-
-@schema
-class InjectionSite(dj.Manual):
-    definition = """
-    -> lab.Subject
-    site : tinyint  # vector injection site
-    ---
-    injection_x : decimal(3,2)   # (mm)
-    injection_y : decimal(3,2)   # (mm)
-    injection_z : decimal(3,2)   # (mm)
-    """
-
-
-@schema
-class TargetRegion(dj.Lookup):
-    definition = """
-    target_region : varchar(12)
-    """
-    contents = zip(['PrV', 'FN', 'VPM', 'PO', 'WhiskerPad', 'SpVi', 'SpVir', 'S1', 'M1', 'Cerebellum', 'SC', 'vIRt', 'brainstem', 'other', 'sham'])
-
-
 @schema
 class Session(dj.Manual):
     definition = """
